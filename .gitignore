@@ -1,0 +1,77 @@
+# Large binary media under src/ (heroes, about/blog images, video, audio — host on CDN/server, not in Git)
+src/video/
+src/audio/
+src/**/*.jpg
+src/**/*.jpeg
+src/**/*.png
+src/**/*.gif
+src/**/*.webp
+src/**/*.bmp
+src/**/*.tif
+src/**/*.tiff
+src/**/*.heic
+src/**/*.avif
+src/**/*.mp4
+src/**/*.webm
+src/**/*.mov
+src/**/*.mkv
+src/**/*.avi
+src/**/*.m4v
+src/**/*.mp3
+src/**/*.wav
+src/**/*.ogg
+src/**/*.m4a
+src/**/*.flac
+src/**/*.aac
+src/**/*.wma
+
+# Raster / video / audio under site img/ (SVG and small assets can stay tracked)
+img/**/*.jpg
+img/**/*.jpeg
+img/**/*.png
+img/**/*.gif
+img/**/*.webp
+img/**/*.bmp
+img/**/*.tif
+img/**/*.tiff
+img/**/*.mp4
+img/**/*.webm
+img/**/*.mov
+img/**/*.mp3
+img/**/*.wav
+img/**/*.m4a
+
+# Sass / SCSS
+.sass-cache/
+*.scssc
+
+# Static site generators (if used later)
+_site/
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Editors
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs and temp
+*.log
+*.tmp
+*.temp
+
+# Optional Node-based tooling
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env / secrets
+.env
+.env.*
+!.env.example

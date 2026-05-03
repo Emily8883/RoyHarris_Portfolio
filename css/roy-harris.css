@@ -1,0 +1,391 @@
+/* Roy Harris site — white, black, red, grays (loads after main.css) */
+:root {
+  --rh-red: #c40012;
+  --rh-red-dark: #8f000d;
+  --rh-gray-light: #f2f2f2;
+  --rh-gray-mid: #9a9a9a;
+  --rh-gray-dark: #3a3a3a;
+  --rh-black: #0a0a0a;
+}
+
+body.top {
+  color: var(--rh-black);
+  background: #fff;
+}
+
+.roy-nav .navbar-nav > li > a {
+  color: #111 !important;
+}
+
+.navbar-Concept.top-nav-collapse .navbar-nav > li > a,
+.navbar-Concept.top-nav-collapse .navbar-brand .logo {
+  color: #eee !important;
+}
+
+.navbar-Concept.top-nav-collapse .navbar-brand .logodark {
+  color: var(--rh-red) !important;
+}
+
+.violet {
+  color: var(--rh-red) !important;
+}
+
+.btn-violet,
+.btn-Concept {
+  border-color: var(--rh-red) !important;
+  background-color: var(--rh-red) !important;
+  color: #fff !important;
+}
+
+.btn-violet:hover,
+.btn-Concept:hover {
+  background-color: var(--rh-red-dark) !important;
+  border-color: var(--rh-red-dark) !important;
+}
+
+.btn-dark-border:hover {
+  border-color: var(--rh-red);
+  color: var(--rh-red);
+}
+
+.bg-gray {
+  background: var(--rh-gray-light) !important;
+}
+
+.section-small.bg-gray.footer,
+.footer.bg-gray {
+  background: #e8e8e8 !important;
+  border-top: 3px solid var(--rh-red);
+}
+
+.portfolio-overlay {
+  background: rgba(196, 0, 18, 0.88) !important;
+}
+
+.roy-skill-grid .roy-skill-card {
+  border: 1px solid #ddd;
+  padding: 1.25rem 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  background: #fff;
+  min-height: 88px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.roy-skill-grid .roy-skill-card:hover {
+  border-color: var(--rh-red);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.roy-skill-grid .roy-skill-card h5 {
+  margin: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
+
+.roy-hero-tagline {
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.65);
+}
+
+.demo-badge,
+.buy-badge {
+  display: none !important;
+}
+
+.roy-cv-letter img {
+  max-height: 420px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.roy-page-hero {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Short strip heroes: pin background to top so `cover` crops from the bottom, not the top */
+.intro.introhalf.roy-page-hero.roy-hero-bg-top {
+  background-position: center top;
+}
+
+/* Home hero: true full-viewport image (img + object-fit is more reliable than bg + height:100%) */
+.roy-home-hero {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  min-height: 100vh;
+  min-height: 100svh;
+  height: 100vh;
+  height: 100svh;
+  background-image: none !important;
+  box-sizing: border-box;
+}
+
+.roy-home-hero-media {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+/* Fit entire photo in the viewport (no crop); letterboxing matches studio white */
+.roy-home-hero-media .roy-home-hero-slide-img {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.roy-home-hero .bottom-hero {
+  z-index: 5;
+}
+
+@media (max-width: 991px) {
+  .roy-home-hero .bottom-hero {
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+}
+
+.roy-muted {
+  color: var(--rh-gray-mid);
+}
+
+.roy-resource-iframe {
+  margin-bottom: 2rem;
+}
+
+.roy-list-columns {
+  column-count: 1;
+}
+
+@media (min-width: 768px) {
+  .roy-list-columns {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .roy-list-columns.cols-3 {
+    column-count: 3;
+  }
+}
+
+.roy-list-columns li {
+  break-inside: avoid;
+}
+
+.intro.introhalf {
+  min-height: 45vh;
+}
+
+/* About page: multi-image hero carousel */
+.roy-about-hero-header {
+  min-height: 50vh;
+}
+
+.roy-about-hero-wrap {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  background-color: #1a1a1a;
+}
+
+.roy-about-hero-carousel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  min-height: 50vh;
+}
+
+.roy-about-hero-carousel .carousel-inner,
+.roy-about-hero-carousel .carousel-inner > .item {
+  height: 100%;
+  min-height: 50vh;
+}
+
+.roy-about-hero-carousel .item > img {
+  display: block;
+  width: 100%;
+  height: 50vh;
+  min-height: 280px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.roy-about-hero-indicators {
+  bottom: 12px;
+  z-index: 16;
+}
+
+.roy-about-hero-indicators li {
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+.roy-about-hero-indicators .active {
+  background-color: var(--rh-red);
+  border-color: var(--rh-red);
+}
+
+.roy-about-hero-caption {
+  left: 8%;
+  right: 8%;
+  bottom: 18%;
+  padding-bottom: 0;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.75);
+}
+
+.roy-about-hero-caption .intro-body {
+  text-align: center;
+  padding: 0;
+}
+
+.roy-about-hero-caption h1,
+.roy-about-hero-caption h4 {
+  color: #fff;
+}
+
+.roy-about-hero-carousel .carousel-control {
+  width: 44px;
+  background: rgba(0, 0, 0, 0.25);
+  text-shadow: none;
+  opacity: 1;
+}
+
+.roy-about-hero-carousel .carousel-control:hover {
+  background: rgba(196, 0, 18, 0.55);
+}
+
+.roy-about-hero-carousel .carousel-control .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .roy-about-hero-carousel .item > img {
+    height: auto;
+    min-height: 360px;
+  }
+}
+
+/* About page: photo gallery in left column (About Me Continued) */
+.roy-about-photo-grid {
+  margin-bottom: 1rem;
+}
+
+.roy-about-photo-grid > img.img-responsive + img.img-responsive {
+  margin-top: 1rem;
+}
+
+.roy-about-gallery-title {
+  margin-top: 1.75rem;
+  margin-bottom: 0.35rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 14px;
+  text-align: left;
+}
+
+.roy-about-gallery-lead {
+  margin-bottom: 1.25rem;
+  font-size: 14px;
+  text-align: left;
+}
+
+.roy-about-gallery-item {
+  margin-bottom: 1rem;
+}
+
+.roy-about-gallery-item img {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  width: 100%;
+  height: auto;
+  background: #fafafa;
+}
+
+@media (min-width: 992px) {
+  #about-continued .roy-about-photo-grid {
+    padding-right: 12px;
+  }
+}
+
+/* About page: biography gallery */
+.roy-about-gallery-title {
+  margin-bottom: 1.25rem;
+  font-weight: 800;
+}
+
+.roy-about-gallery {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #ddd;
+}
+
+.roy-about-gallery .roy-gallery-cell {
+  margin-bottom: 1.5rem;
+}
+
+.roy-about-gallery .roy-gallery-cell img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #e0e0e0;
+  background: #fafafa;
+}
+
+/* Home: What We Do — Vimeo grid */
+.roy-what-we-do .lead {
+  margin-bottom: 1.75rem;
+}
+
+.roy-what-we-do-card {
+  margin-bottom: 2.25rem;
+}
+
+.roy-what-we-do-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.65rem;
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--rh-black);
+}
+
+.roy-what-we-do-embed {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+.roy-what-we-do-link {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
