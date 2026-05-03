@@ -19,7 +19,7 @@ body.top {
 
 .navbar-Concept.top-nav-collapse .navbar-nav > li > a,
 .navbar-Concept.top-nav-collapse .navbar-brand .logo {
-  color: #eee !important;
+  color: #242020 !important;
 }
 
 .navbar-Concept.top-nav-collapse .navbar-brand .logodark {
@@ -174,6 +174,11 @@ body.top {
 
 .roy-resource-iframe {
   margin-bottom: 2rem;
+}
+
+article .roy-article-audio {
+  display: block;
+  margin-bottom: 1.5rem;
 }
 
 .roy-list-columns {
@@ -361,9 +366,13 @@ body.top {
   background: #fafafa;
 }
 
-/* Home: What We Do — Vimeo grid */
+/* Home: What We Do — Vimeo grid (four separate .row blocks: BS3 floats break when one card is taller) */
 .roy-what-we-do .lead {
   margin-bottom: 1.75rem;
+}
+
+.row.roy-what-we-do-grid + .row.roy-what-we-do-grid {
+  margin-top: 0.5rem;
 }
 
 .roy-what-we-do-card {

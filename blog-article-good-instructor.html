@@ -48,7 +48,7 @@
         </div>
       </div>
     </nav>
-    <header class="intro introhalf roy-page-hero roy-hero-bg-top" data-background="src/hero/hero4.jpg" style="background-image:url('src/hero/hero4.jpg');">
+    <header class="intro introhalf roy-page-hero roy-hero-bg-top" data-background="src/hero/about-article-hero/hero4.webp" style="background-image:url('src/hero/hero4.jpg');">
       <div class="overlay"></div>
       <div class="intro-body">
         <h1>What Makes a Good Instructor?</h1>
@@ -82,12 +82,17 @@
             <p>Roy Harris</p>
             <hr>
             <h3>Audio</h3>
-            <p><a class="btn btn-dark-border btn-sm" href="src/audio/063_-_Roy_Harris.mp3">Listen to this article (MP3)</a></p>
+            <audio class="roy-article-audio" controls preload="metadata" style="width: 100%; max-width: 560px;">
+              <source src="src/audio/063_-_Roy_Harris.mp3" type="audio/mpeg">
+              <a href="src/audio/063_-_Roy_Harris.mp3">Listen to this article (MP3)</a>
+            </audio>
             <h3>Video</h3>
             <div class="embed-responsive embed-responsive-16by9 roy-resource-iframe">
-              <iframe title="Related video" src="src/video/TWIBJJ Episode 98 with Roy Harris Part 1 of 2.mp4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <video class="embed-responsive-item" controls playsinline preload="metadata" title="Companion video">
+                <source src="src/video/TWIBJJ Episode 98 with Roy Harris Part 1 of 2.mp4" type="video/mp4">
+                <a href="src/video/TWIBJJ Episode 98 with Roy Harris Part 1 of 2.mp4">video (MP4)</a>
+              </video>
             </div>
-            <p><a href="src/video/sample.mp4">Companion video (MP4)</a></p>
           </div>
         </div>
       </div>
