@@ -172,6 +172,76 @@ body.top {
   color: var(--rh-gray-mid);
 }
 
+/* Resources page: justified text, vertical rhythm, mobile-friendly link targets */
+.roy-resources-body {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.roy-resources-body.section-small {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.roy-resources-body .roy-resources-heading {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.roy-resources-body .roy-resources-links {
+  margin-bottom: 0;
+  padding-top: 0.25rem;
+}
+
+.roy-resources-body .roy-resources-links li {
+  margin-bottom: 1.5rem;
+}
+
+.roy-resources-body .roy-resources-links li:last-child {
+  margin-bottom: 0;
+}
+
+.roy-resources-body .roy-resources-links a {
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+@media (max-width: 767px) {
+  .roy-resources-body.section-small {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .roy-resources-body .roy-resources-heading {
+    margin-bottom: 1.75rem;
+  }
+
+  .roy-resources-body .roy-resources-links {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .roy-resources-body .roy-resources-links li {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .roy-resources-body .roy-resources-links li:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .roy-resources-body .roy-resources-links a {
+    display: block;
+    padding: 18px 4px;
+    min-height: 48px;
+    line-height: 1.45;
+    box-sizing: border-box;
+  }
+}
+
 .roy-resource-iframe {
   margin-bottom: 2rem;
 }
@@ -298,6 +368,46 @@ article .roy-article-audio {
     height: auto;
     min-height: 360px;
   }
+}
+
+/* About page: centered block (col-md-offset), two-column justified body text */
+#about-continued .roy-about-body-twocol {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+@media (min-width: 768px) {
+  #about-continued .roy-about-body-twocol {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+  }
+}
+
+#about-continued .roy-about-body-twocol h2,
+#about-continued .roy-about-body-twocol h3 {
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
+  text-align: center;
+}
+
+/* Nested multi-column lists would fight the page columns; keep one list flow */
+#about-continued .roy-about-body-twocol ul.roy-list-columns,
+#about-continued .roy-about-body-twocol ul.roy-list-columns.cols-3 {
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+}
+
+#about-continued .roy-about-body-twocol ul,
+#about-continued .roy-about-body-twocol ol {
+  text-align: left;
 }
 
 /* About page: photo gallery in left column (About Me Continued) */

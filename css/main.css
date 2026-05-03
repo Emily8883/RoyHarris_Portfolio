@@ -2999,6 +2999,12 @@ nav.nav-demo {
   text-decoration: none;
   opacity: 1;
 }
+.footer .roy-footer-social-img {
+  display: inline-block;
+  height: 22px;
+  width: auto;
+  vertical-align: text-bottom;
+}
 .footer a.btn {
   color: #000 !important;
 }
