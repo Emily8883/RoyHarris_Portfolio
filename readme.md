@@ -1,41 +1,40 @@
 # Roy Harris Website
 
-Static multi-page website for Roy Harris, covering martial arts instruction, defensive tactics, arrest and control, resources, FAQ content, and blog articles.
+Static multi-page front-end website for Roy Harris, showcasing martial arts instruction, defensive tactics, arrest and control training, resources, FAQ content, and blog articles.
 
 ## Overview
 
-This project is a front-end site built with plain HTML, CSS, JavaScript, fonts, and image assets. There is no build step or application framework required to run it.
+This repository contains a static website built with HTML, CSS, JavaScript, fonts, and image assets. There is no build step required, and the site can be served from any static web server or opened directly in a browser.
 
 ## Pages
 
-- `index.html` - home page
-- `about.html` - about page
-- `about2.html` - alternate about page
-- `blog.html` - blog index
-- `blog-article-good-instructor.html` - blog article
-- `blog-article-importance-bridge.html` - blog article
-- `blog-article-intercepting-hand.html` - blog article
-- `faq.html` - frequently asked questions
-- `resources.html` - resources page
-- `video-sound.html` - media page
-- `accordions.html` - accordion demo page
-- `404.html` - custom error page
-- `indexpersonal2.html` - alternate homepage layout
+- `index.html` — home page
+- `indexpersonal2.html` — alternate homepage layout
+- `about.html` — about page
+- `about2.html` — alternate about page
+- `blog.html` — blog index page
+- `blog-article-good-instructor.html` — blog article
+- `blog-article-importance-bridge.html` — blog article
+- `blog-article-intercepting-hand.html` — blog article
+- `faq.html` — frequently asked questions page
+- `resources.html` — resources page
+- `video-sound.html` — media/demo page
+- `accordions.html` — accordion demo page
+- `404.html` — custom error page
 
 ## Project Structure
 
-- `css/` - stylesheets
-- `js/` - JavaScript files and third-party plugins
-- `fonts/` - local font files and icon fonts
-- `img/` - site images and logos
-- `icon/` - contact and social icons
-- `src/` - source images used across pages
-- `downloads/` - downloadable files and assets
-- `scss/` - Sass source files
+- `css/` — stylesheets
+- `js/` — JavaScript files and plugins
+- `fonts/` — local font assets and icon fonts
+- `img/` — main image assets
+- `icon/` — icon and social assets
+- `scss/` — Sass source files
+- `src/` — source images used in page sections
 
 ## Local Preview
 
-Open `index.html` directly in a browser, or serve the folder with any static server.
+Open `index.html` directly in a browser, or use a static server to preview the site.
 
 Example:
 
@@ -43,14 +42,14 @@ Example:
 npx serve
 ```
 
-Then open the local address shown in the terminal.
+Then open the local URL shown in the terminal.
 
-## Editing Notes
+## Notes
 
-- Keep relative file paths intact when moving or renaming assets.
-- Update shared navigation in each HTML file if you change menu items.
-- The main site styling is in `css/main.css` and `css/roy-harris.css`.
-- The main homepage hero copy and contact link live in `index.html`.
+- Keep relative paths intact when moving or renaming assets.
+- Update navigation and shared UI elements in each HTML file if menu structure changes.
+- Primary styles are in `css/main.css` and `css/roy-harris.css`.
+- Homepage hero content is defined in `index.html` and `indexpersonal2.html`.
 
 ## Contact
 
